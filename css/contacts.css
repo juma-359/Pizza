@@ -1,0 +1,53 @@
+body{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    height: 1000px; 
+    margin-top:45px;
+    /* width: 100%; */
+    overflow: scroll;
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    display: block; 
+    margin-top: 15%;
+    font-size: larger;
+    /* margin-top: 45px;  */
+}
+
+.social{
+    display: inline;
+    text-decoration: none;
+}
+
+.social :hover{
+    color: white;
+}
+
+.logo-github{
+    color: blue;
+    background-color: darkblue;
+}
+.logo-linkedin{
+    color: darkblue;
+    background-color: blue;
+}
+.logo-facebook{
+    color: darkblue;
+    background-color: blue;
+}
+.logo-whatsapp{
+    color: green;
+    background-color: darkgreen;
+}
+.logo-google{
+    color: red;
+    background-color:red;
+}
+.logo-slack{
+    color: blueviolet;
+    background-color: purple;
+}
