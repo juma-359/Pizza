@@ -1,0 +1,39 @@
+body{
+    background-color: goldenrod;
+    overflow : scroll;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: auto;
+    text-align: center;
+}
+
+h1{
+    color: red;
+    text-decoration: underline greenyellow;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
+h2{
+    color: rgb(53, 10, 2);
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-decoration: underline mediumturquoise;
+}
+
+p{
+    text-decoration: none;
+    font-size: initial;
+}
+
+.pitsa{
+    display: inline-block;
+    font-size: larger;
+}
+
+#size, #crust{
+    font-size: large;
+    /* color: whitesmoke; */
+    background-color: yellow;
+}
