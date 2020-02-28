@@ -1,22 +1,64 @@
 body{
-    background-image: url("");
+    /* background-color: goldenrod; */
     background-repeat: no-repeat;
     background-size: cover;
     overflow: scroll;
-    height: 1000px; 
-    margin-top:45px;
+    height: 300px; 
+    margin-top:15px;
     /* width: 100%; */
     overflow: scroll;
+}
+
+h1{
+    text-transform: uppercase;
+    text-decoration: underline red;
+    font-size: xxx-large;
+    color: saddlebrown;
 }
 
 .container{
     text-align: center;
     justify-content: center;
     display: block; 
-    margin-top: 15%;
+    margin-top: 5%;
     font-size: larger;
     /* margin-top: 45px;  */
 }
+
+#fill{
+    height: 100%;
+    font-size: larger;
+    display: contents;
+}
+
+.fill1, .fill2{
+    background: transparent;
+    font-style: italic;
+    width: 30%;
+    height: 45%;
+}
+
+/* .fill3{
+    background: transparent;
+    font-style: italic;
+    width: 30%;
+    height: 60%;    
+} */
+
+.fill4{
+    color: whitesmoke;
+    background-color: tomato;
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+}
+
+/* form{
+    width: 30%;
+    height: 45%;
+    align-items: center;
+
+} */
 
 .social{
     display: inline;
@@ -30,24 +72,30 @@ body{
 .logo-github{
     color: blue;
     background-color: darkblue;
+    border-radius: 100%;
 }
 .logo-linkedin{
     color: darkblue;
     background-color: blue;
+    border-radius: 50%;
 }
 .logo-facebook{
     color: darkblue;
     background-color: blue;
+    border-radius: 80%;
 }
 .logo-whatsapp{
     color: green;
     background-color: darkgreen;
+    border-radius: 30%;
 }
 .logo-google{
     color: red;
-    background-color:red;
+    background-color: maroon;
+    border-radius: 50%;
 }
 .logo-slack{
     color: blueviolet;
     background-color: purple;
+    border-radius: 90%;
 }
