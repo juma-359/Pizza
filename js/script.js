@@ -27,4 +27,28 @@ var inputForUserOrder = new UserOrder (
     pizzaQuantityPrice()
 );
 
+var totalPrice = 
+(inputForUserOrder.size + inputForUserOrder.crust + inputForUserOrder.toppings ) * inputForUserOrder.quantity;
+if(totalPrice > 0) {
+    alert("You spend total amount of ksh" + totalPrice);
+}
+
+
+var delivery = confirm("for an delivery we charge additional ksh. 200 and we can deliver at your door step in few minutes");
+if (delivery === true) {
+    for(;;){
+        var location = prompt ("kindly let us know where to deliver for you your pizza")
+        if (location !== "") {
+            alert("your pizza will be delivered at " + location + " thank you for choosing us and always at your service");
+            else {
+                alert("please to recieve your pittza enter a valid location")
+            };
+        };
+        alert("Now your total amount is ksh" + " totalPrice" + " ksh 200");
+        else {
+            alert("Thank you for choosing victorious pizzas we are here for you  you will pass by at our restaurant and pick your pizza");
+        }
+    };
+};
+
 
