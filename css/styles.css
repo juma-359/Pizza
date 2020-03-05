@@ -1,4 +1,7 @@
 body{
+    background-image: url('https://bit.ly/2Igvize');
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow : scroll;
     overflow-x: hidden;
     height: 100%;
@@ -35,6 +38,7 @@ p{
 #size, #crust, #quanty, #topping{
     font-size: large;
     background-color: yellow;
+    color: green;
 }
 
 
@@ -63,4 +67,3 @@ p{
   .btn:hover {
     background-color: goldenrod;
   }
-  
