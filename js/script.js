@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $("button#buy").click(function (event) {
          function buyNow(size, crust, topping, quantity) {
@@ -6,77 +5,82 @@ $(document).ready(function () {
             this.prize = 0;
             this.crust = crust;
             this.topping = topping;
-            this.quantity = quantity;
+            this.quanty = quantity;
+
+            if (this.size == size[0]){
+                return this.size += "600";
+            }
 
              size = ["small", "medium", "large"];
              crust = ["Crisp", "Stuffed", "Cheese-Stuffed Crust", "Neapolitan Crust", "Thin Crust", "Pizza Bagels", "Sicilian Style", "Flatbread"];
              topping = ["Green pepper", "Onions", "Saursage", "Bacon", "Extra cheese", "Black olives"];
-             quantity = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
         }
-        var size = $("#size").val();
-        var crust = $("#crust").val();
-        var topping = $("#topping").val();
-        var quantity = $("#quanty").val();
-        var totalPrice = [];
+        var size = parseInt($("#size").val());
+        var crust = parseInt($("#crust").val());
+        var topping = parseInt($("#topping").val());
+        var quanty = parseInt($("#quanty").val());
+        var totalPrice = 0;
        
-        alert("You have ordered  ordered and the total is " + 7456 )
+         totalPrice = size + crust + topping *quanty;
+        alert("You have ordered a pizza size equivalent to " + size + " and the crust is equal to " + crust + " while the toppings is equal to " + topping + " and the total prize is " + totalPrice)
+        
        
     });
 
       buyNow.prototype.Price = function(){
           if(this.size === size[0]){
-              this.prize += 400;
+              this.prize += 600;
           }
           else if(this.size === size[1]){
-              this.size += 600;
+              this.size += 800;
           }
           else if(this.size === size[2]){
-            this.size += 800;
+            this.size += 1000;
         }
         if(this.crust === crust[0]){
-            this.crust += 200;
+            this.crust += 100;
         }
         else if(this.crust === crust[1]){
-            this.crust += 250;
+            this.crust += 200;
         }
         else if(this.crust === crust[2]){
             this.size += 300;
         }
         else if(this.crust === crust[3]){
-            this.crust += 350;
-        }
-        else if(this.crust === crust[4]){
             this.crust += 400;
         }
-        else if(this.crust === crust[5]){
-            this.crust += 450;
-        }
-        else if(this.crust === crust[6]){
+        else if(this.crust === crust[4]){
             this.crust += 500;
         }
+        else if(this.crust === crust[5]){
+            this.crust += 600;
+        }
+        else if(this.crust === crust[6]){
+            this.crust += 700;
+        }
         else if(this.crust === crust[7]){
-            this.crust += 550;
+            this.crust += 800;
         }
         if(this.topping === topping[0]){
-            this.topping += 200;
+            this.topping += 10;
         }
         else if(this.topping === topping[1]){
-            this.topping += 250;
+            this.topping += 20;
         }
         else if(this.topping === topping[2]){
-            this.topping += 300;
+            this.topping += 30;
         }
         else if(this.topping === topping[3]){
-            this.topping += 350;
+            this.topping += 40;
         }
         else if(this.topping === topping[4]){
-            this.topping += 400;
+            this.topping += 50;
         }
         else if(this.topping === topping[5]){
-            this.topping += 450;
+            this.topping += 60;
         }
-        return this.price;
+        return totalPrice;
       }
      
       buyNow.prototype.totalCost = function(){
