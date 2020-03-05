@@ -44,7 +44,7 @@
 
         <div class="flava">
             <h2>Pizza Topping</h2>
-            <select name="crust" id="crust">
+            <select name="crust" id="topping">
                 <option>Choose your Topping</option>
                 <option value="10">Green pepper = ksh 10</option>
                 <option value="20">Onions = ksh 20</option>
@@ -55,9 +55,9 @@
             </select><br>
             <form>
                 <h2>Enter quantity</h2>
-                <input type="text" name="buyNow" placeholder="1-100" required=""/>
+                <input type="text" id="quanty" name="buyNow" placeholder="1-100" required=""/>
             </form>
-            <button id="buy">Submit</button>
+            <button id="buy" onclick="buyNow()">Submit</button>
         </div>
     </div>
     </div>
